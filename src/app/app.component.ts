@@ -1,3 +1,9 @@
+/** selector is used to link a component to the main index.html page
+ * dynamically swapped while refreshing the page.
+ * pacjaged file prepared from this , will be injected to index.html file
+ * SWaps the app-rppt with our this compoenet
+ * content can be ay logic which we can add here.
+*/
 import { Component } from '@angular/core';
 
 @Component({
