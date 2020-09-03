@@ -2,8 +2,9 @@
  * dynamically swapped while refreshing the page.
  * pacjaged file prepared from this , will be injected to index.html file
  * SWaps the app-rppt with our this compoenet
- * content can be ay logic which we can add here.
-*/
+ * content can be any logic which we can push.
+ * In Memory CodeSwapping.
+ */
 import { Component } from '@angular/core';
 
 @Component({
