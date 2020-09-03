@@ -3,7 +3,7 @@
  * pacjaged file prepared from this , will be injected to index.html file
  * SWaps the app-rppt with our this compoenet
  * content can be any logic which we can push.
- * In Memory CodeSwapping.
+ * In-Memory Code Swapping for plugin components.
  */
 import { Component } from '@angular/core';
 
