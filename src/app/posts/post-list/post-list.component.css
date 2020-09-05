@@ -11,3 +11,7 @@ nothing changes as not all the element are block elevel elements by default.
   display: block;
   margin-top: 1rem;
 }
+
+.info-text {
+  text-align: center;
+}
