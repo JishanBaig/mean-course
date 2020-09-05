@@ -16,19 +16,23 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
+// unlocks toolbar module
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppComponent } from './app.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
+import { HeaderComponent } from './header/header.component';
 import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
 // explicitly register a component
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostCreateComponent // to prevent "app-post-create is not a known element."
+    PostCreateComponent, // to prevent "app-post-create is not a known element."
     // registering it with amgular.
     // Reference to the component
     // explicitly register a component
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,8 @@ import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
     BrowserAnimationsModule,
     MatInputModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
