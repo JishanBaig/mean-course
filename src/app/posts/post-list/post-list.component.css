@@ -1,0 +1,13 @@
+/*
+host targets the element itself
+:host {
+  margin-top: 1rem;
+}
+nothing changes as not all the element are block elevel elements by default.
+
+*/
+
+:host {
+  display: block;
+  margin-top: 1rem;
+}

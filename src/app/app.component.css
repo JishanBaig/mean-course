@@ -5,4 +5,6 @@ or css class selectors
 
 main {
   margin-top: 1rem;
+  width: 80%;
+  margin: auto;
 }

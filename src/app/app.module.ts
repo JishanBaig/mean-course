@@ -15,15 +15,17 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-
 // unlocks toolbar module
 import { MatToolbarModule } from '@angular/material/toolbar';
+// for post listing
+import { MatExpansionModule } from '@angular/material/expansion';
 
+// explicitly register a component
 import { AppComponent } from './app.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
 import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
-// explicitly register a component
+import { PostListComponent } from './posts/post-list/post-list.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
     // registering it with amgular.
     // Reference to the component
     // explicitly register a component
-    HeaderComponent
+    HeaderComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
