@@ -1,4 +1,5 @@
 import { Component, Input} from '@angular/core';
+import { Post } from '../post.model';
 
 // lets see if we can out put somew dummy posts.
 // done that
@@ -15,7 +16,7 @@ export class PostListComponent {
   //   {title: 'Second Post', content: 'This is the second post\'s content'},
   //   {title: 'Third Post', content: 'This is the third post\'s content'}
   // ];
-  @Input() posts = [];
+  @Input() posts: Post[] = [];
   // dynamically loop through these posts and output the data.->
   // Angular directives which allows us to manimulate elements in the dom when needed.
 

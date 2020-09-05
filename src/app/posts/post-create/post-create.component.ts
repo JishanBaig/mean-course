@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
+import { Post } from '../post.model';
 // Emit the event from poctcreate compone t and listen for it in post list compionent.
 // u wannt to liten to this event outside class so use output decorator.
 @Component({
@@ -12,7 +13,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class PostCreateComponent{
   enteredTitle = '';
   enteredContent = '';
-  @Output() postCreated = new EventEmitter();
+  @Output() postCreated = new EventEmitter<Post>();
   // postCreated can be listenned from the outside.
   // means in the parent component.
   // newPost = 'NO CONTENT';
@@ -22,7 +23,7 @@ export class PostCreateComponent{
     // console.dir(postInput);
     // this.newPost = postInput.value; // one way to getting user's input.
     // this.newPost = this.enteredValue;
-    const post = {
+    const post: Post = {
       title: this.enteredTitle,
       content: this.enteredContent
     };
