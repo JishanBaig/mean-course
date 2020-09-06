@@ -1,10 +1,14 @@
 <!--if card is sitting directlt on the edge of the toolbar.
 use main html element and style it in css file
+<main>
+  <app-post-create (postCreated)="onPostAdded($event)"></app-post-create>
+  <app-post-list [posts]="storedPosts"></app-post-list>
+</main>
 
 -->
 
 <app-header></app-header>
 <main>
-  <app-post-create (postCreated)="onPostAdded($event)"></app-post-create>
-  <app-post-list [posts]="storedPosts"></app-post-list>
+  <app-post-create></app-post-create>
+  <app-post-list></app-post-list>
 </main>
