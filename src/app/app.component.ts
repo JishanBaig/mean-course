@@ -5,6 +5,14 @@
  * content can be any logic which we can push.
  * In-Memory Code Swapping for plugin components.
  */
+
+ /**
+  * using a list of posts , filled by post create and accessed by post list.
+  * Is there anny other way??: A Service
+  * Service: easy access to data between components.
+  * and Dependency Injection
+  *
+*/
 import { Component } from '@angular/core';
 import { Post } from './posts/post.model';
 

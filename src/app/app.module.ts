@@ -26,6 +26,7 @@ import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
 import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
 import { PostListComponent } from './posts/post-list/post-list.component';
+// import { PostsService } from './posts/post.service';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { PostListComponent } from './posts/post-list/post-list.component';
     MatToolbarModule,
     MatExpansionModule
   ],
+  // providers: [ PostsService ],
   providers: [],
   bootstrap: [AppComponent]
   // one root component, other component would be nested
