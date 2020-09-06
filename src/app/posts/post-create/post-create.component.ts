@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 import { Post } from '../post.model';
+import { NgForm } from '@angular/forms';
 // Emit the event from poctcreate compone t and listen for it in post list compionent.
 // u wannt to liten to this event outside class so use output decorator.
 @Component({
@@ -18,14 +19,17 @@ export class PostCreateComponent{
   // means in the parent component.
   // newPost = 'NO CONTENT';
   // enteredValue = '';
-  onAddPost() {
+  onAddPost(form: NgForm) {
+    if (form.invalid){
+      return;
+    }
     // alert('post added!');
     // console.dir(postInput);
     // this.newPost = postInput.value; // one way to getting user's input.
     // this.newPost = this.enteredValue;
     const post: Post = {
-      title: this.enteredTitle,
-      content: this.enteredContent
+      title: form.value.title,
+      content: form.value.content
     };
     this.postCreated.emit(post);
   }
